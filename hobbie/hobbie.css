@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(./images/football_stadium_background.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 100%;
+    max-width: auto;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.back{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2em;
+    position: sticky;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .4px;
+}
+
+.menu{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.menu span{
+    color: rgb(57, 57, 236);
+}
+
+.menu:Hover{
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(201,154,69,.35);
+}
+
+.back ul{
+    list-style: none;
+    display: flex;
+}
+
+/* .back ul li{
+    padding: px px;
+} */
+
+.back ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 60px;
+    color: var(--text-dark);
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.back ul li a:hover{
+    color: gray; 
+}
+
+.boy img{
+    width: 500px;
+    height: 550px;
+    /* animation: slideRight 3.9s ease-out; */
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* @keyframes slideRight {
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px;
+    padding: 50px 8%; */
+}
+
+.container p{
+    color: white;
+}
+.stadium{
+    padding: 200px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.stadium h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.stadium h1 span{
+    color: blueviolet;
+    gap: 4em;
+}
+
+.stadium span p{
+    font-weight: 900;
+    line-height: 9px;
+    font-size: 20px;
+}
+
+.stadium small p{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.stadium small span {
+    color: blueviolet;
+}
+
+.stadium p{
+    font-weight: 1000;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.stadium button{
+    background-color: blueviolet;
+    color: white;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 13px;
+    
+}
+
+
+.about-me{
+ display: flex;
+ /* align-items: center;
+ justify-content: center; */
+ padding: 200px;
+ margin-bottom: 20px;
+ gap: 2em;
+ background-color: #101825;
+ margin-top: -4em;
+ border-right: 2px solid rgba(26, 25, 25, 0.3);
+}
+
+
+
+.about-me span h3{
+    color: blueviolet;
+    height: 19px;
+   
+}
+
+.about-me h1{
+    color: white;
+    
+}
+
+.about-me p{
+    color: white;
+    font-weight: 700;
+}
+
+
+
+.sunset img{
+   width: 300px;
+}
+
+.age{
+    color: white;
+    /* opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.7 ease forwards; */
+}
+
+.age
+
+.nigeria{
+    background-color: #1A2230;
+    border: 1px solid #293344;
+    border-radius: 8px;
+    padding: 15px;
+    /* animation-delay: 0.2s; */
+}
+
+.location{
+    background-color: #1A2230;
+    border: 1px solid #293344;
+    border-radius: 8px;
+    padding: 15px;
+    /* animation-delay: 0.4s; */
+}
+
+.goals{
+    background-color: #1A2230;
+    border: 1px solid #293344;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    /* animation-delay: 0.6s; */
+}
+
+.passion{
+    background-color: #1A2230;
+    border: 1px solid #293344;
+    border-radius: 8px;
+    padding: 15px;
+    /* animation-delay: 0.8s; */
+}
+
+/* @keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.barcelona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 20em;
+     background-color: #101825;
+     margin-top: -4em;
+}
+
+.ballers img{
+    width: 400px;
+}
+
+.line{
+    border: 9px solid white;
+    /* height: 9px; */
+    background: white;
+    /* margin: 32px 0; */
+}
+
+.style h3{
+    color: blueviolet;
+}
+
+.style h1{
+    color: white;
+}
+
+.style p{
+    color: white;
+}
+
+.style button{
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+    font-size: 13px;
+}
